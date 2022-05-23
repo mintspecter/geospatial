@@ -9,6 +9,8 @@ docker build --rm \
     --tag $IMAGE \
     --build-arg BASE_CONTAINER=$BASE_CONTAINER \
     . \
+&& docker tag $IMAGE "$IMAGE_BASE:latest" \
 && echo "Docker Push Command
     $ docker push $IMAGE
+    & docker push $IMAGE_BASE:latest
 "
