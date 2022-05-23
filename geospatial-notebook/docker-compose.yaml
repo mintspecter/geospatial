@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+   notebook:
+      image: "docker.io/mintspecter/geospatial-notebook:latest"
+      ports:
+       - "8888:8888"
+      volumes:
+       - ./work:/home/jovyan/work:rw
+      privileged: true
+      user: 1000:100
