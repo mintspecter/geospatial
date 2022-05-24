@@ -5,7 +5,8 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - work:/home/jovyan/work2
+      - work:/home/jovyan/work
+      - ./data:/home/jovyan/data
     environment:
       - JUPYTER_TOKEN=test
 volumes:
