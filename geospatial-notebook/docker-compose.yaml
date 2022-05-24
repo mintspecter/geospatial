@@ -5,9 +5,13 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - work:/home/jovyan/work
-      - ./data:/home/jovyan/data
+      - work:/home/jovyan/work:rw
+      - ./data:/home/jovyan/data:ro
+    user: 1000:100
+    privileged: true
     environment:
       - JUPYTER_TOKEN=test
+      - CHOWN_HOME=true
+      - CHOWN_HOME_OPTS=-R
 volumes:
   work:
