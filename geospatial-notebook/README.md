@@ -1,23 +1,23 @@
 # JupyterLab with PySpark for Geo-Spatial
 
 * installed packages for geo-spatial
- - gdal
- - fiona
- - pyproj
- - shapely
- - geopandas
- - pydeck
+   - gdal: https://gdal.org/tutorials/
+   - fiona: https://fiona.readthedocs.io/en/stable/
+   - pyproj: https://pyproj4.github.io/pyproj/stable/
+   - shapely: https://shapely.readthedocs.io/en/stable/manual.html
+   - geopandas: https://geopandas.org/en/stable/
+   - pydeck: https://deckgl.readthedocs.io/en/latest/layer.html
 
 * required
- - podman or docker
- - podman-compose or docker-compose
+   - podman or docker
+   - podman-compose or docker-compose
 
-* port
- - 8888
+* jupyterlab port
+   - 8888
 
 * jupyterlab path
- - /work (volume, read write)
- - /data (local, read only)
+   - /work (volume, read write)
+   - /data (local, read only)
 
 ## build (optional)
 ```bash 
