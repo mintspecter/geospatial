@@ -36,9 +36,11 @@ cp /data/some_file.csv ./data/
 ./container_start.sh
 ```
 
-* connect url
+## show logs
+
+* run following logs
 ```
-http://{host_ip}:8888/lab?token=test
+./container_logs.sh
 ```
 
 ## stop
